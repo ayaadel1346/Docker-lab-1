@@ -8,38 +8,41 @@ Learn how to run a container using the hello-world image and manage containers a
 ### Steps
 #### 1. Run a Container with hello-world Image
 ```bash
-```
-
 docker pull hello-world
 **************************
 docker run hello-world
 
-**********************
-docker run hello-world
+```
+
+
 
 #### 2. Check Container Status and Explain
 ```bash
-```
 docker ps -a
 **********************************
 container will execute  hello-world program , then exit
+```
+
 
 #### 3. Start the Stopped Container
 ```bash
-```
 docker start <container_id>
+```
+
 
 #### 4. Remove the Container
 ```bash
-```
 docker rm <container_id>
+
+```
 
 
 #### 5. Remove the Image
 ```bash
+docker rmi hello-world
 ```
 ---
-docker rmi hello-world
+
 
 
 
@@ -50,45 +53,53 @@ Run an Ubuntu container in interactive mode, create a file inside it, and manage
 ### Steps
 #### 1. Run Ubuntu Container in Interactive Mode
 ```bash
-```
 docker pull ubuntu
 *************************
 docker run -it ubuntu
+```
+
 
 #### 2. Create a File inside the Container
 ```bash
+touch hello-docker
 ```
 
-touch hello-docker
+
 
 #### 3. Stop and Remove the Container
 ```bash
-```
-
 exit
 ***************
 docker container stop <container_id>
 **********************************
 docker container rm <container_id>
+```
+
+
 #### 4. Check File Status
 ```bash
-```
 ls
+ls -l
+```
+
 #### 5. What happened to hello-docker file?
 ```bash
-```
 hello-docker file are removed , as any changes made inside the container are not persisted after the container is removed.
+```
+
 #### 6. Remove All Stopped Containers
 ```bash
-```
 docker container prune
+```
+
 
 #### 7. Bonus: Remove All Containers in One Command
 ```bash
-```
 docker container prune
 ************************
 docker rm -f $(docker ps -aq)
+
+```
 
 
 ---
