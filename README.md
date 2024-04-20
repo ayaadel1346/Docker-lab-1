@@ -4,23 +4,42 @@
 ### Objective
 Learn how to run a container using the hello-world image and manage containers and images.
 
+
 ### Steps
 #### 1. Run a Container with hello-world Image
 ```bash
 ```
+
+docker pull hello-world
+docker run hello-world
+
+**********************
+docker run hello-world
+
 #### 2. Check Container Status and Explain
 ```bash
 ```
+docker ps -a
+container will execute  hello-world program , then exit
+
 #### 3. Start the Stopped Container
 ```bash
 ```
+docker start <container_id>
+
 #### 4. Remove the Container
 ```bash
 ```
+docker rm <container_id>
+
+
 #### 5. Remove the Image
 ```bash
 ```
 ---
+docker rmi hello-world
+
+
 
 ## Task 2: Running Container with Ubuntu Image
 ### Objective
