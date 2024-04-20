@@ -11,6 +11,7 @@ Learn how to run a container using the hello-world image and manage containers a
 ```
 
 docker pull hello-world
+**************************
 docker run hello-world
 
 **********************
@@ -20,6 +21,7 @@ docker run hello-world
 ```bash
 ```
 docker ps -a
+**********************************
 container will execute  hello-world program , then exit
 
 #### 3. Start the Stopped Container
